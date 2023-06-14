@@ -63,6 +63,7 @@ app.use("/users", authUser);
 app.use("/posts", authPost);
 app.use("/category", authCat);
 
+app.get("/", (req, res) => res.send(`Server Running successfully.....!`));
 //---- step : 1.2
 app.listen("7532", () => {
   console.log("backend running...");
